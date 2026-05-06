@@ -181,12 +181,11 @@ function buildFlexMessage(data, comment) {
       header: {
         type: 'box',
         layout: 'vertical',
-        backgroundColor: '#1a1a2e',
+        backgroundColor: '#00B900',
         paddingAll: '16px',
         contents: [
-          { type: 'text', text: 'Weekly Report', color: '#aaaaaa', size: 'xs' },
-          { type: 'text', text: 'サプライズルーティン振り返り', color: '#ffffff', size: 'sm', weight: 'bold', margin: 'xs' },
-          { type: 'text', text: thisWeek.period, color: '#aaaaaa', size: 'xs', margin: 'xs' }
+          { type: 'text', text: 'サプライズルーティン振り返り', color: '#ffffff', size: 'md', weight: 'bold', margin: 'xs' },
+          { type: 'text', text: thisWeek.period, color: '#ffffff', size: 'xs', margin: 'xs' }
         ]
       },
       body: {
@@ -200,8 +199,8 @@ function buildFlexMessage(data, comment) {
             layout: 'vertical',
             alignItems: 'center',
             contents: [
-              { type: 'text', text: rate + '%', size: 'xxl', weight: 'bold', color: rateColor, align: 'center' },
               { type: 'text', text: '今週の達成率', size: 'xs', color: '#888888', align: 'center' },
+              { type: 'text', text: rate + '%', size: 'xxl', weight: 'bold', color: rateColor, align: 'center' },
               { type: 'text', text: diffText, size: 'xs', color: diffColor, align: 'center', margin: 'xs' }
             ]
           },
@@ -210,7 +209,7 @@ function buildFlexMessage(data, comment) {
             type: 'box',
             layout: 'vertical',
             contents: [
-              { type: 'text', text: '💡 ワンポイントアドバイス', size: 'xs', color: '#888888', weight: 'bold' },
+              { type: 'text', text: '💡 ワンポイントアドバイス', size: 'md', color: '#333333', weight: 'bold' },
               { type: 'text', text: comment, size: 'sm', color: '#333333', wrap: true, margin: 'sm' }
             ]
           },
@@ -219,13 +218,13 @@ function buildFlexMessage(data, comment) {
             type: 'box',
             layout: 'vertical',
             contents: [
-              { type: 'text', text: '✅ 来週改善したい項目', size: 'xs', color: '#888888', weight: 'bold' }
+              { type: 'text', text: '✅ 来週改善したい項目', size: 'md', color: '#333333', weight: 'bold' }
             ].concat(thisWeek.notAchieved.slice(0, 5).map(function(item) {
               return {
                 type: 'text',
                 text: '・' + item,
-                size: 'xs',
-                color: '#555555',
+                size: 'sm',
+                color: '#333333',
                 wrap: true,
                 margin: 'xs'
               };
