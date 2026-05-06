@@ -8,37 +8,57 @@ var SHEET_GID = 1098239501;
  */
 var ROUTINES = [
   { id: "r01", category: "健康", name: "早寝早起きする" },
-  { id: "r02", category: "健康", name: "睡眠6時間以上とる" },
-  { id: "r03", category: "健康", name: "毎日20分以上の軽い運動をする" },
-  { id: "r04", category: "健康", name: "毎日湯船に入る（39〜40℃・10〜15分）" },
-  { id: "r05", category: "健康", name: "GI値の高い炭水化物・揚げ物を控える" },
-  { id: "r06", category: "健康", name: "夕食・飲酒は寝る2時間前に終える" },
-  { id: "r07", category: "健康", name: "仕事中は背筋を伸ばして良い姿勢を保つ" },
-  { id: "r08", category: "健康", name: "毎晩デンタルフロスをする" },
-  { id: "r09", category: "健康", name: "体重を測って記録する" },
-  { id: "r10", category: "健康", name: "保湿して日焼け止めを塗る" },
-  { id: "r11", category: "健康", name: "仕事や自己研鑽から離れてリラックスできる時間を30分以上つくる" },
-  { id: "r12", category: "自己研鑽", name: "筋トレする（軽い運動でもOK）" },
-  { id: "r13", category: "自己研鑽", name: "隙間時間にゴシップとショート動画を見ない" },
-  { id: "r14", category: "自己研鑽", name: "毎日良かったことや新しい発見を人に話すか書き出す" },
-  { id: "r15", category: "自己研鑽", name: "朝活の時間を30分以上つくる" },
+  { id: "r02", category: "健康", name: "睡眠時間を推奨8時間以上、最低6時間以上とる" },
+  { id: "r03", category: "健康", name: "毎日20分以上の軽い運動をしている" },
+  { id: "r04", category: "健康", name: "毎日湯船入る(39〜40℃・10〜15分)" },
+  {
+    id: "r05",
+    category: "健康",
+    name: "GI値の高い炭水化物、精製された砂糖の摂取を控える（野菜と一緒に食べる）"
+  },
+  { id: "r06", category: "健康", name: "揚げ物の摂取を控える" },
+  { id: "r07", category: "健康", name: "夕食・飲酒は寝る2時間以上前に終える" },
+  { id: "r08", category: "健康", name: "仕事中は背筋を伸ばして良い姿勢を保つ" },
+  { id: "r09", category: "健康", name: "毎晩デンタルフロスをする" },
+  { id: "r10", category: "健康", name: "体重を測って記録する" },
+  { id: "r11", category: "健康", name: "保湿して日焼け止めを塗る" },
+  { id: "r12", category: "健康", name: "仕事や自己研鑽から離れてリラックスできる時間を30分以上つくる" },
+  { id: "r13", category: "自己研鑽", name: "筋トレする（軽い運動でもOK）" },
+  { id: "r14", category: "自己研鑽", name: "隙間時間にゴシップとショート動画を見ない" },
+  { id: "r15", category: "自己研鑽", name: "毎日良かったことや新しい発見を人に話すか書き出す" },
   { id: "r16", category: "自己研鑽", name: "誰が見ても完璧なほど身だしなみを整える" },
-  { id: "r17", category: "効率化", name: "部屋を常に整理整頓・清潔にする" },
-  { id: "r18", category: "効率化", name: "中毒性があるものへの課金をやめる" },
-  { id: "r19", category: "効率化", name: "承認欲求を満たすためだけのSNS投稿をしない" },
-  { id: "r20", category: "効率化", name: "2分以内に終わることはすぐにやる" },
-  { id: "r21", category: "人間関係", name: "身近な人の話を集中して聞く" },
-  { id: "r22", category: "人間関係", name: "人の良いところを見つけて伝える" },
-  { id: "r23", category: "人間関係", name: "人にあったら笑顔で元気にあいさつする" },
-  { id: "r24", category: "人間関係", name: "いかなる場面でも余白のある伝え方をする" },
-  { id: "r25", category: "人間関係", name: "相手の話を聞く時に「目を見る」「うなずく」を徹底し、人の話を遮らない" },
-  { id: "r26", category: "仕事", name: "人の話を聞く時はメモを取る" },
-  { id: "r27", category: "仕事", name: "人からプッシュされないように自分から進捗を共有する" },
-  { id: "r28", category: "仕事", name: "締め切りを過ぎる場合は事前に連絡する" },
-  { id: "r29", category: "仕事", name: "仕事に取り掛かる前にゴールとアウトラインを確認する" },
-  { id: "r30", category: "仕事", name: "質問には結論から簡潔に答える" },
-  { id: "r31", category: "仕事", name: "わかったふりをせず、その場で質問して解決する" },
-  { id: "r32", category: "仕事", name: "朝活の時間を30分以上つくる（仕事準備）" }
+  { id: "r17", category: "自己研鑽", name: "朝活の時間を30分以上つくる" },
+  { id: "r18", category: "効率化", name: "部屋を常に整理整頓・清潔にする" },
+  { id: "r19", category: "効率化", name: "中毒性があるものへの課金をやめる" },
+  { id: "r20", category: "効率化", name: "承認欲を満たすためだけのSNS投稿をしない" },
+  { id: "r21", category: "効率化", name: "2分以内に終わることはすぐにやる" },
+  { id: "r22", category: "人間関係", name: "身近な人の話を集中して聞く" },
+  { id: "r23", category: "人間関係", name: "人の良いところを見つけて伝える" },
+  { id: "r24", category: "人間関係", name: "人にあったら笑顔で元気にあいさつする" },
+  { id: "r25", category: "人間関係", name: "いかなる場面でも余白のある伝え方をする" },
+  {
+    id: "r26",
+    category: "人間関係",
+    name: "相手の話を聞く時に「目を見る」「うなずく」を徹底し、人の話を遮らない"
+  },
+  { id: "r27", category: "仕事", name: "人の話を聞く時はメモを取る" },
+  {
+    id: "r28",
+    category: "仕事",
+    name: "人からプッシュ（進捗確認）されないように自分から何をいつまでにやるかを伝える"
+  },
+  {
+    id: "r29",
+    category: "仕事",
+    name: "締め切り(約束の時間)を過ぎる場合は、事前に連絡する"
+  },
+  {
+    id: "r30",
+    category: "仕事",
+    name: "仕事に取り掛かる前に「ゴール」と「アウトライン」を上司や関係者に確認している"
+  },
+  { id: "r31", category: "仕事", name: "質問には結論から簡潔に答える" },
+  { id: "r32", category: "仕事", name: "わかったふりをせず、その場で質問して解決する" }
 ];
 
 var COL_PERIOD = 1;
@@ -46,8 +66,12 @@ var COL_AVG_RATE = 2;
 var COL_FIRST_ROUTINE = 3;
 var NUM_COLS = COL_FIRST_ROUTINE - 1 + ROUTINES.length;
 
-var LABEL_DONE = "○";
-var LABEL_NOT_DONE = "×";
+var LABEL_DONE = "◯";
+var LABEL_NOT_DONE = "✕";
+
+/** 1行目はユーザー領域（GASは書かない）。2行目がヘッダー、3行目以降がデータ */
+var HEADER_ROW = 2;
+var FIRST_DATA_ROW = 3;
 
 function doPost(e) {
   try {
@@ -95,7 +119,7 @@ function doPost(e) {
       }
       sheet.getRange(keep, 1, 1, NUM_COLS).setValues([row]);
     } else {
-      var newRow = sheet.getLastRow() + 1;
+      var newRow = Math.max(sheet.getLastRow() + 1, FIRST_DATA_ROW);
       sheet.getRange(newRow, 1, 1, NUM_COLS).setValues([row]);
     }
 
@@ -125,7 +149,7 @@ function doGet(e) {
   }
 }
 
-/** 項目ごとの累計達成率（履歴行が対象。ヘッダー行・空行はスキップ） */
+/** 項目ごとの累計達成率（3行目以降のデータ行のみ。空行はスキップ） */
 function getSummary_() {
   var sheet = getSheet_();
   var rows = getDataRows2D_(sheet);
@@ -172,14 +196,15 @@ function getSummary_() {
   });
 }
 
-/** 過去の週一覧（期間の開始日降順） */
+/** 過去の週一覧（期間の開始日降順）。3行目以降のみ */
 function getHistory_() {
   var sheet = getSheet_();
   var lastRow = sheet.getLastRow();
-  if (lastRow < 2) return [];
+  if (lastRow < FIRST_DATA_ROW) return [];
 
   var numCols = Math.min(NUM_COLS, Math.max(sheet.getLastColumn(), NUM_COLS));
-  var values = sheet.getRange(2, 1, lastRow, numCols).getValues();
+  var numRows = lastRow - FIRST_DATA_ROW + 1;
+  var values = sheet.getRange(FIRST_DATA_ROW, 1, numRows, numCols).getValues();
 
   var seen = {};
   var list = [];
@@ -223,7 +248,7 @@ function getWeek_(start) {
   if (!dataRowIndex) return [];
 
   var row = sheet
-    .getRange(dataRowIndex, COL_FIRST_ROUTINE, dataRowIndex, COL_FIRST_ROUTINE - 1 + ROUTINES.length)
+    .getRange(dataRowIndex, COL_FIRST_ROUTINE, 1, ROUTINES.length)
     .getValues()[0];
 
   return ROUTINES.map(function (routine, i) {
@@ -246,17 +271,17 @@ function getSheet_() {
   return sheet;
 }
 
-/** A1 が空ならヘッダー行を作成 */
+/** 2行目（A2）が空ならヘッダー行を作成。1行目は触らない */
 function ensureHeader_(sheet) {
-  var a1 = sheet.getRange(1, 1).getValue();
-  if (a1 != null && String(a1).trim() !== "") return;
+  var a2 = sheet.getRange(HEADER_ROW, 1).getValue();
+  if (a2 != null && String(a2).trim() !== "") return;
 
   var header = ["期間", "平均達成率"].concat(
     ROUTINES.map(function (r) {
       return r.name;
     })
   );
-  sheet.getRange(1, 1, 1, NUM_COLS).setValues([header]);
+  sheet.getRange(HEADER_ROW, 1, 1, NUM_COLS).setValues([header]);
 }
 
 /**
@@ -267,10 +292,10 @@ function findAllDataRowsByWeekStart_(sheet, weekStart) {
   if (!target) return [];
 
   var lastRow = sheet.getLastRow();
-  if (lastRow < 2) return [];
+  if (lastRow < FIRST_DATA_ROW) return [];
 
   var out = [];
-  for (var r = 2; r <= lastRow; r++) {
+  for (var r = FIRST_DATA_ROW; r <= lastRow; r++) {
     var cell = sheet.getRange(r, COL_PERIOD).getValue();
     var start = parsePeriodStart_(cell);
     if (start === target) out.push(r);
@@ -292,13 +317,14 @@ function normalizeDateToken_(value) {
   return String(value).trim();
 }
 
-/** データ行を2次元配列で取得（ヘッダー除く）。列数は NUM_COLS に揃える */
+/** データ行を2次元配列で取得（3行目以降のみ）。列数は NUM_COLS に揃える */
 function getDataRows2D_(sheet) {
   var lastRow = sheet.getLastRow();
-  if (lastRow < 2) return [];
+  if (lastRow < FIRST_DATA_ROW) return [];
 
+  var numRows = lastRow - FIRST_DATA_ROW + 1;
   var width = Math.max(NUM_COLS, sheet.getLastColumn());
-  var raw = sheet.getRange(2, 1, lastRow, width).getValues();
+  var raw = sheet.getRange(FIRST_DATA_ROW, 1, numRows, width).getValues();
   return raw.filter(function (row) {
     return row[COL_PERIOD - 1] != null && String(row[COL_PERIOD - 1]).trim() !== "";
   });
