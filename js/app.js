@@ -25,7 +25,6 @@ async function init() {
   hydrateFromLocal();
   updateStats();
   bindEvents();
-  registerServiceWorker();
   maybeShowEndpointHint();
   await hydrateFromApi();
 }
@@ -227,15 +226,5 @@ function maybeShowEndpointHint() {
     saveStatus.textContent =
       "js/api.js の GAS URL を本番URLに変更すると保存・集計が使えます。";
     saveStatus.className = "hint";
-  }
-}
-
-function registerServiceWorker() {
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./service-worker.js").catch(() => {
-        // オフライン対応は任意のため失敗時は無視
-      });
-    });
   }
 }
