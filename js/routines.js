@@ -2,7 +2,7 @@ export const ROUTINES = [
   { id: "r01", category: "健康", name: "早寝早起きする" },
   { id: "r02", category: "健康", name: "睡眠時間を推奨8時間以上、最低6時間以上とる" },
   { id: "r03", category: "健康", name: "毎日20分以上の軽い運動をしている" },
-  { id: "r04", category: "健康", name: "毎日湯船入る(39〜40℃・10〜15分)" },
+  { id: "r04", category: "健康", name: "毎日湯船に入る(39〜40℃・10〜15分)" },
   {
     id: "r05",
     category: "健康",
@@ -15,7 +15,7 @@ export const ROUTINES = [
   { id: "r10", category: "健康", name: "体重を測って記録する" },
   { id: "r11", category: "健康", name: "保湿して日焼け止めを塗る" },
   { id: "r12", category: "健康", name: "仕事や自己研鑽から離れてリラックスできる時間を30分以上つくる" },
-  { id: "r13", category: "自己研鑽", name: "筋トレする（軽い運動でもOK）" },
+  { id: "r13", category: "健康", name: "筋トレする（軽い運動でもOK）" },
   { id: "r14", category: "自己研鑽", name: "隙間時間にゴシップとショート動画を見ない" },
   { id: "r15", category: "自己研鑽", name: "毎日良かったことや新しい発見を人に話すか書き出す" },
   { id: "r16", category: "自己研鑽", name: "誰が見ても完璧なほど身だしなみを整える" },
