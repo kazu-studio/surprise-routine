@@ -174,7 +174,7 @@ function buildFlexMessage(data, comment) {
 
   return {
     type: 'flex',
-    altText: '今週のサプライズルーティン振り返り｜達成率 ' + rate + '%',
+    altText: '今週のSR振り返り｜達成率 ' + rate + '%',
     contents: {
       type: 'bubble',
       size: 'kilo',
