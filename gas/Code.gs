@@ -10,7 +10,7 @@ var ROUTINES = [
   { id: "r01", category: "健康", name: "早寝早起きする" },
   { id: "r02", category: "健康", name: "睡眠時間を推奨8時間以上、最低6時間以上とる" },
   { id: "r03", category: "健康", name: "毎日20分以上の軽い運動をしている" },
-  { id: "r04", category: "健康", name: "毎日湯船入る(39〜40℃・10〜15分)" },
+  { id: "r04", category: "健康", name: "毎日湯船に入る(39〜40℃・10〜15分)" },
   {
     id: "r05",
     category: "健康",
