@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#2d6cdf" />
+    <title>振り返り | サプライズルーティン</title>
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <nav class="top-nav">
+        <a href="./index.html">チェック画面へ戻る</a>
+        <span class="period">振り返り</span>
+      </nav>
+
+      <section class="card">
+        <h1 class="title">累計達成率</h1>
+        <div class="controls">
+          <select id="sortSelect" class="select">
+            <option value="rate-desc">達成率の高い順</option>
+            <option value="category">カテゴリ別</option>
+          </select>
+        </div>
+        <div id="summaryContainer" class="summary-list"></div>
+      </section>
+
+      <section class="card" style="margin-top: 12px">
+        <h2 class="section-title">過去週の記録</h2>
+        <div class="controls">
+          <select id="historyWeekSelect" class="select"></select>
+        </div>
+        <div id="weekDetailContainer" class="summary-list"></div>
+      </section>
+    </main>
+
+    <script type="module" src="./js/history.js"></script>
+  </body>
+</html>
