@@ -23,7 +23,7 @@ var ROUTINES = [
   { id: "r10", category: "健康", name: "体重を測って記録する" },
   { id: "r11", category: "健康", name: "保湿して日焼け止めを塗る" },
   { id: "r12", category: "健康", name: "仕事や自己研鑽から離れてリラックスできる時間を30分以上つくる" },
-  { id: "r13", category: "自己研鑽", name: "筋トレする（軽い運動でもOK）" },
+  { id: "r13", category: "健康", name: "筋トレする（軽い運動でもOK）" },
   { id: "r14", category: "自己研鑽", name: "隙間時間にゴシップとショート動画を見ない" },
   { id: "r15", category: "自己研鑽", name: "毎日良かったことや新しい発見を人に話すか書き出す" },
   { id: "r16", category: "自己研鑽", name: "誰が見ても完璧なほど身だしなみを整える" },
